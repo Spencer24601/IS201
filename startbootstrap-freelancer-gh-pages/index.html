@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Professional Resume – Spencer Madsen</title>
+
+    <link rel="icon" type="image/x-icon" href="assests/favicon.ico" />
+
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+
+    <link href="CSS/styles.css?v=1.5" rel="stylesheet" />
+
+    <style>
+        /* --- 1. Fixes for Layout and Paths --- */
+
+        /* Hero / Masthead Custom Styles (Must use the ID) */
+        #masthead-custom {
+            /* CORRECTED IMAGE PATH (assuming Ocean.jpg is inside assests root) */
+            background-image: url('assests/Ocean.jpg'); 
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+            position: relative;
+        }
+
+        #masthead-custom::before {
+            content: "";
+            position: absolute;
+            top:0; left:0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.3);
+            z-index: 0;
+        }
+
+        #masthead-custom * {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* 4. Force Green Background on About Section */
+        #about {
+            background-color: #1abc9c !important; /* Theme's primary teal/green */
+            color: white !important; /* Ensure text is white */
+        }
+
+        /* Body light blue background */
+        body {
+            background-color: #e0f2ff;
+        }
+
+        /* Resume section columns for skills */
+        .two-column {
+            columns: 2;
+            -webkit-columns: 2;
+            -moz-columns: 2;
+        }
+
+        /* Fix for Star Divider Size (from previous steps) */
+        .divider-custom-icon i {
+            font-size: 2.5rem; 
+            margin-top: 1.5rem; 
+            margin-bottom: 0.5rem;
+        }
+        .divider-custom-line {
+            height: 4px;
+        }
+
+    </style>
+</head>
+
+<body id="page-top">
+
+<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Spencer Madsen</a>
+        <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" 
+                type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a>
+                </li>
+                <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#resume">Résumé</a>
+                </li>
+                <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded" href="html/scratch.html">Scratch</a>
+                </li>
+                <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded" href="html/ai.html">Quiz</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="masthead text-center text-white min-vh-100" id="masthead-custom">
+    <div class="container d-flex align-items-center flex-column">
+        <img class="masthead-avatar mb-4 rounded-circle" src="assests/img/myface.jpg" alt="Spencer Madsen" />
+        <h1 class="masthead-heading text-uppercase mb-0">Spencer Madsen</h1>
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <p class="masthead-subheading font-weight-light mb-0">Student • Builder • Communicator • Future Professional</p>
+    </div>
+</header>
+
+<section class="page-section text-white mb-0" id="about">
+    <div class="container">
+        <h2 class="page-section-heading text-center text-uppercase text-white">About Me</h2>
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 ms-auto mb-3">
+                <img src="assests/img/myface.jpg" class="img-fluid rounded" alt="About me image">
+            </div>
+            <div class="col-lg-6 me-auto">
+                <p class="lead">
+                    I am a sophomore at Brigham Young University (BYU) Provo, passionate about
+                    building, analyzing, and creating meaningful things. I have strong experience
+                    in leadership, communication, Excel, and technology gained as a missionary
+                    and student. I am fluent in Spanish and enjoy working with people, explaining
+                    ideas, and solving problems.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="page-section portfolio" id="resume">
+    <div class="container">
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Résumé</h2>
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+
+        <div class="mb-5">
+            <h4 class="fw-bold">Education</h4>
+            <ul>
+                <li>
+                    <strong>Brigham Young University (BYU) Provo</strong> — Sophomore
+                    <br>Expected Graduation: 2027
+                    <br>Major: Business Strategy
+                </li>
+            </ul>
+        </div>
+
+        <div class="mb-5">
+            <h4 class="fw-bold">Experience</h4>
+            <div class="mb-3">
+                <strong>Full-Time Missionary</strong> — The Church of Jesus Christ of Latter-day Saints
+                <ul>
+                    <li>Led teams, taught daily lessons, and coordinated planning.</li>
+                    <li>Developed strong communication, leadership, and interpersonal skills.</li>
+                    <li>Became fluent in Spanish through immersive work.</li>
+                </ul>
+            </div>
+            <div class="mb-3">
+                <strong>Additional Experience</strong>
+                <ul>
+                    <li>Excel, analysis, presentations, and technical problem-solving.</li>
+                    <li>Creating systems, organizing data, and improving processes.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <h4 class="fw-bold">Skills</h4>
+            <ul class="two-column">
+                <li>Spanish (Fluent)</li>
+                <li>Leadership</li>
+                <li>Data Analysis</li>
+                <li>Excel</li>
+                <li>Communication</li>
+                <li>Technical Problem Solving</li>
+                <li>Storytelling</li>
+                <li>Organization</li>
+            </ul>
+        </div>
+
+        <div class="mb-5">
+            <h4 class="fw-bold">Awards & Honors</h4>
+            <ul>
+                <li>Mission Leadership Roles</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer class="footer text-center py-4">
+    <div class="container">
+        <p class="text-muted mb-0">© 2025 Spencer Madsen — All Rights Reserved</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
